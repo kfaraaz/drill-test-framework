@@ -35,10 +35,17 @@
                                                                        .*Project.*
                                                                          .*HashJoin.*
                                                                            .*Project.*
-                                                                             .*Scan.*
-                                                                           .*BroadcastExchange.*
-                                                                             .*Project.*
-                                                                               .*Scan.*
+                                                                             .*HashToRandomExchange.*
+                                                                               .*UnorderedMuxExchange.*
+                                                                                 .*Project.*
+                                                                                   .*Project.*
+                                                                                     .*Scan.*
+                                                                           .*Project.*
+                                                                             .*HashToRandomExchange.*
+                                                                               .*UnorderedMuxExchange.*
+                                                                                 .*Project.*
+                                                                                   .*Project.*
+                                                                                     .*Scan.*
                                                                    .*BroadcastExchange.*
                                                                      .*Project.*
                                                                        .*Scan.*
